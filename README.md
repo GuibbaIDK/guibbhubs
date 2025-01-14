@@ -56,7 +56,7 @@ RollbackButton.MouseButton1Click:Connect(function()
     RollbackButton.Text = "Rollback Ativado"
     print("Rollback ativado!")
 
-    -- Salva os valores atuais como "estado inicial"
+-- Salva os valores atuais como "estado inicial"
     if game.Players.LocalPlayer:FindFirstChild("leaderstats") then
         for _, v in pairs(game.Players.LocalPlayer.leaderstats:GetChildren()) do
             if v:IsA("IntValue") or v:IsA("NumberValue") then
